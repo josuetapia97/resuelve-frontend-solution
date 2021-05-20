@@ -5,6 +5,7 @@ import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import Icon from '@mdi/react';
 import { mdiEmoticonCryOutline } from '@mdi/js';
+import { mdiBlur } from '@mdi/js';
 
 const useStyles = makeStyles((theme) => ({
     container: {
@@ -66,7 +67,7 @@ export default function Contenido(){
       React.useEffect(()=>{
           
           const fetchData = async()=>{
-            const url = 'https://ghibliapi.herokuapp.com/films'
+            const url = '/films'
             setLoading(true);
             const response = await fetch(url);
             const json = await response.json();
@@ -99,7 +100,14 @@ export default function Contenido(){
     return (isLoading)?
     (
         <div>
-            Está cargando el Contenido
+            <Icon path={mdiBlur}
+                    title="No content"
+                    size={10}
+                    horizontal
+                    vertical
+                    rotate={180}
+                    color="black"
+                    spin/>
         </div>
     ):
         (
