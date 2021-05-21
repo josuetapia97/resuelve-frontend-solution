@@ -28,3 +28,8 @@ y listo, podemos consultar nuestro pequeño sitio web, en la siguiente URL:
 
 entonces abrimos nuestro navegador e introducimos la URL anterior.
 
+# Parte del código que estoy más orgulloso 
+
+``https://github.com/josuetapia97/resuelve-frontend-solution/blob/main/src/Contenido.js``
+
+El subirlo a alguna plataforma ya no me dio tiempo, es un trabajo que se puede hacer futuro, sin embargo, al tener toda la solución en un contenedor el deploy se realiza mucho más fácil.
